@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Dec  8 11:08:09 2025
+# Process ID         : 20352
+# Current directory  : C:/Filer Vivado/IMULib_V2_Virker
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent35364 C:\Filer Vivado\IMULib_V2_Virker\IMULib.xpr
+# Log file           : C:/Filer Vivado/IMULib_V2_Virker/vivado.log
+# Journal file       : C:/Filer Vivado/IMULib_V2_Virker\vivado.jou
+# Running On         : Magnus_PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 125U
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 14
+# Host memory        : 16602 MB
+# Swap memory        : 17138 MB
+# Total Virtual      : 33740 MB
+# Available Virtual  : 18966 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Filer Vivado/IMULib_V2_Virker/IMULib.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 7
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list I2C_SDAT]]
+place_ports I2C_SDAT U8
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 7
+wait_on_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {ax[15]}]]
+place_ports {gz[15]} M3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[14]}]]
+place_ports {gz[14]} L3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[13]}]]
+place_ports {gz[13]} A16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[12]}]]
+place_ports {gz[12]} K3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[11]}]]
+place_ports {gz[11]} C15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[10]}]]
+place_ports {gz[10]} H1
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[9]}]]
+place_ports {gz[9]} A15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {ax[8]}]]
+place_ports {gz[8]} B15
+endgroup
+set_property package_pin "" [get_ports [list  {ax[15]}]]
+set_property package_pin "" [get_ports [list  {ax[8]}]]
+place_ports {ax[8]} {ax[15]} {ax[14]} {ax[13]} {ax[12]} {ax[11]} {ax[10]} {ax[9]}
+set_property is_loc_fixed true [get_ports [list  {ax[15]} {ax[14]} {ax[13]} {ax[12]} {ax[11]} {ax[10]} {ax[9]} {ax[8]} {ax[7]} {ax[6]} {ax[5]} {ax[4]} {ax[3]} {ax[2]} {ax[1]} {ax[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 7
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 7
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Filer Vivado/IMULib_V2_Virker/IMULib.runs/impl_1/mpu_rg.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Filer Vivado/IMULib_V2_Virker/IMULib.runs/impl_1/mpu_rg.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Filer Vivado/IMULib_V2_Virker/IMULib.runs/impl_1/mpu_rg.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Filer Vivado/IMULib_V2_Virker/IMULib.runs/impl_1/mpu_rg.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Filer Vivado/IMULib_V2_Virker/IMULib.runs/impl_1/mpu_rg.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
